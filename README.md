@@ -14,6 +14,9 @@ Recreation of the Google home page from [web.archive.org](https://web.archive.or
   * Use of inline-blocks, flexboxes, and associated attributes.
   * Used colors from main page to modify colors on recreated page.
 
+* Others
+  * Live Server VSCode extension and Firefox's Developer tools for testing
+
 ## Resources
 * The Odin Project's [Google Homepage Project](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/html-css)
 * [Google Logo](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
