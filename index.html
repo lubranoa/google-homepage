@@ -1,200 +1,210 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Google</title>
-    <meta charset="UTF-8">
-    <style>
-        html {
-            font-family: arial, sans-serif;
-        }
-        
-        ul {
-            list-style-type: none;
-            margin: 0 auto;
-            padding: 0px 30px 0px 12px;
-            font-size: 13px;
-            color: black;
-            opacity: 85%;
-        }
-        .left {
-            float: left;
-            display: flex;
-        }
-        .right {
-            float: right;
-            display: flex;
-        }
-        li a {
-            display: inline-block;
-            vertical-align: center;
-            padding: 0px 8px;
-            text-decoration: none;
-            color: black;
-            margin-top: 8px;
-        }
-        li a:hover {
-            text-decoration: underline;
-        }
-        #apps {
-            opacity: 60%;
-            margin-top: -4px;
-            padding-left: 4px;
-            padding-right: 10px;
-        }
-        #apps:hover {
-            opacity: 100%;
-        }
-        button {
-            font-family: arial, sans-serif;
-        }
-        #sign-in {
-            background-color: #4285f4;
-            color: white;
-            padding: 6px 12px;
-            border: 1px solid #4285f4;
-            font-weight: bold;
-            outline: none;
-            vertical-align: center;
-            border-radius: 0.5px;
-        }
-        .center {
-            display: flex;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-            justify-content: center;
-        }
-        #form {
-            display: flex;
-            flex-direction: column;
-            width:45%;
-        }
-        #search-bar {
-            border: #d1d1d1;
-            border-style: solid;
-            border-width: 1px;
-            border-image-outset: 0;
-            border-image-repeat: stretch;
-            border-image-slice: 100%;
-            border-image-source: none;
-            border-image-width: 1;
-            box-shadow: none;
-            border-radius: 24px;
-            height: 44px;
-            margin: 0 auto;
-            width: 482px;
-            margin-bottom: 40px;
-            display: flex;
-        }
-        #search-bar:hover {
-            box-shadow: 0 1px 6px 0px rgba(0,0,0,0.2);
-        }
-        #glass {
-            padding-left: 10px;
-            padding-right: 10px;
-            opacity: 35%;
-            border-top-width: 0px;
-            border-top-style: solid;
-            height: 20px;
-            align-self: center;
-        }
-        input {
-            font-family: arial, sans-serif;
-            font-size: 16px;
-            background-color: transparent;
-            border: none;
-        }
-        input:focus {
-            outline: none;
-        }
-        #search {
-            font-size: 14px;
-            border: 1px solid #e6e6e6;
-            background-color: #e6e6e6;
-            border-radius: 4px;
-            padding: 8px 16px;
-            opacity: 60%;
-            margin-right: 6px;
-            cursor: pointer;
-        }
-        #search:hover {
-            border-color: slategray;
-            opacity: 90%;
-            background-color: #f2f2f2;
-        }
-        #lucky {
-            font-size: 14px;
-            border: 1px solid #e6e6e6;
-            background-color: #e6e6e6;
-            border-radius: 4px;
-            padding: 8px 16px;
-            opacity: 60%;
-            box-shadow: none;
-            margin-left: 6px;
-            cursor: pointer;
-        }
-        #lucky:hover {
-            border-color: slategray;
-            opacity: 90%;
-            background-color: #f2f2f2;
-        }
-        #footer {
-            position: fixed;
-            left: 0px;
-            bottom: 0px;
-            width: 100%;
-            height: 45px;
-            background-color: #f2f2f2;
-            border-top: solid 1px;
-            border-top-color: #dddddd;
-        }
-        #bottom-ul {
-            font-size: 14px;
-            opacity: 60%;
-            margin-top: 6px;
-        }
-        #bottom-ul li a {
-            padding: 0px 12px;
-        }
-    </style>
-</head>
-<body>
-    <header id="header">
-        <ul>
-            <li class="left"><a href="#">About</a></li>
-            <li class="left"><a href="#">Store</a></li>
-            <li class="right"><button id="sign-in" href="#">Sign in</button></li>
-            <li class="right" id="apps"><a href="#"><img src="images/apps_black_24dp.svg" alt="Google Apps"></a></li>
-            <li class="right"><a href="#">Images</a></li>
-            <li class="right"><a href="#">Gmail</a></li>
-        </ul>
-    </header>
-    <main>
-        <div style="padding-top: 140px; padding-bottom: 30px;" class="center">
-            <img id="logo" src="images/googlelogo_color_272x92dp.png" alt="Google Logo">
-        </div>
-        <form class="center" id="form" action="#">
-            <div id="search-bar">
-                <img id="glass" src="images/search_black_24dp.svg">
-                <input size="45" type="text">
+    <head>
+        <title>Google</title>
+        <meta charset="UTF-8">
+        <style>
+            html {
+                font-family: arial, sans-serif;
+            }
+            
+            ul {
+                list-style-type: none;
+                margin: 0 auto;
+                padding: 0px 30px 0px 12px;
+                font-size: 13px;
+                color: black;
+                opacity: 85%;
+            }
+            .left {
+                float: left;
+                display: flex;
+            }
+            .right {
+                float: right;
+                display: flex;
+            }
+            li a {
+                display: inline-block;
+                vertical-align: center;
+                padding: 0px 8px;
+                text-decoration: none;
+                color: black;
+                margin-top: 8px;
+            }
+            li a:hover {
+                text-decoration: underline;
+            }
+            #apps {
+                opacity: 60%;
+                margin-top: -4px;
+                padding-left: 4px;
+                padding-right: 10px;
+            }
+            #apps:hover {
+                opacity: 100% !important;
+            }
+            button {
+                font-family: arial, sans-serif;
+            }
+            #sign-in {
+                background-color: #4285f4;
+                color: white;
+                padding: 6px 11px;
+                border: 1px solid #4285f4;
+                font-weight: bold;
+                outline: none;
+                vertical-align: center;
+                border-radius: 2px;
+                opacity: 100%;
+            }
+            .center {
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                justify-content: center;
+            }
+            #form {
+                display: flex;
+                flex-direction: column;
+                width:45%;
+            }
+            #search-bar {
+                border: #d1d1d1;
+                border-style: solid;
+                border-width: 1px;
+                border-image-outset: 0;
+                border-image-repeat: stretch;
+                border-image-slice: 100%;
+                border-image-source: none;
+                border-image-width: 1;
+                box-shadow: none;
+                border-radius: 24px;
+                height: 44px;
+                margin: 0 auto;
+                width: 482px;
+                margin-bottom: 40px;
+                display: flex;
+            }
+            #search-bar:hover {
+                box-shadow: 0 1px 6px 0px rgba(0,0,0,0.2);
+            }
+            #glass {
+                padding-left: 15px;
+                padding-right: 10px;
+                opacity: 35%;
+                border-top-width: 0px;
+                border-top-style: solid;
+                height: 20px;
+                align-self: center;
+            }
+            #mic {
+                height: 20px;
+                padding-top: 12px;
+            }
+            #mic:hover {
+                cursor: pointer;
+                
+            }
+            input {
+                font-family: arial, sans-serif;
+                font-size: 16px;
+                background-color: transparent;
+                border: none;
+            }
+            input:focus {
+                outline: none;
+            }
+            #search {
+                font-size: 14px;
+                border: 1px solid #e6e6e6;
+                background-color: #e6e6e6;
+                border-radius: 4px;
+                padding: 8px 16px;
+                opacity: 60%;
+                margin-right: 6px;
+                cursor: pointer;
+            }
+            #search:hover {
+                border-color:rgb(194, 194, 194);
+                opacity: 90%;
+                background-color: #f2f2f2;
+            }
+            #lucky {
+                font-size: 14px;
+                border: 1px solid #e6e6e6;
+                background-color: #e6e6e6;
+                border-radius: 4px;
+                padding: 8px 16px;
+                opacity: 60%;
+                box-shadow: none;
+                margin-left: 6px;
+                cursor: pointer;
+            }
+            #lucky:hover {
+                border-color:rgb(194, 194, 194);
+                opacity: 90%;
+                background-color: #f2f2f2;
+            }
+            #footer {
+                position: fixed;
+                left: 0px;
+                bottom: 0px;
+                width: 100%;
+                height: 45px;
+                background-color: #f2f2f2;
+                border-top: solid 1px;
+                border-top-color: #dddddd;
+            }
+            #bottom-ul {
+                font-size: 14px;
+                opacity: 60%;
+                margin-top: 6px;
+            }
+            #bottom-ul li a {
+                padding: 0px 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <ul>
+                <li class="left"><a href="#">About</a></li>
+                <li class="left"><a href="#">Store</a></li>
+                <li class="right"><button id="sign-in" href="#">Sign in</button></li>
+                <li class="right" id="apps"><a href="#"><img src="images/apps_black_24dp.svg" alt="Google Apps"></a></li>
+                <li class="right"><a href="#">Images</a></li>
+                <li class="right"><a href="#">Gmail</a></li>
+            </ul>
+        </header>
+        <main>
+            <div style="padding-top: 140px; padding-bottom: 30px;" class="center">
+                <img id="logo" src="images/googlelogo_color_272x92dp.png" alt="Google Logo">
             </div>
-            <div class="center">
-                <button id="search">Google Search</button>
-                <button id="lucky">I'm Feeling Lucky</button>
-            </div>
-        </form>
-    </main>
-    <footer id="footer">
-        <ul id="bottom-ul">
-            <li class="left"><a href="#">Advertising</a></li>
-            <li class="left"><a href="#">Business</a></li>
-            <li class="left"><a href="#">How Search Works</a></li>
-            <li class="right"><a href="#">Settings</a></li>
-            <li class="right"><a href="#">Terms</a></li>
-            <li class="right"><a href="#">Privacy</a></li>
-        </ul>
-    </footer>
-</body>
+            <form class="center" id="form" alt="Search bar" action="#">
+                <div id="search-bar">
+                    <img id="glass" src="images/search_black_24dp.svg">
+                    <input size="42" type="text">
+                    <img id="mic" alt="Search by voice" src="images/Google_mic.svg.png">
+                </div>
+                <div class="center">
+                    <button id="search">Google Search</button>
+                    <button id="lucky">I'm Feeling Lucky</button>
+                </div>
+            </form>
+        </main>
+        <footer id="footer">
+            <ul id="bottom-ul">
+                <li class="left"><a href="#">Advertising</a></li>
+                <li class="left"><a href="#">Business</a></li>
+                <li class="left"><a href="#">How Search Works</a></li>
+                <li class="right"><a href="#">Settings</a></li>
+                <li class="right"><a href="#">Terms</a></li>
+                <li class="right"><a href="#">Privacy</a></li>
+            </ul>
+        </footer>
+    </body>
 
 </html>
